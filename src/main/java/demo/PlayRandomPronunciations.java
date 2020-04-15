@@ -6,7 +6,7 @@ import demo.impl.Pronouncer;
 import java.util.List;
 import java.util.Random;
 
-public class LearnEnglishWords {
+public class PlayRandomPronunciations {
 
     public static void main(String[] args) throws Exception {
         List<List<String>> records = CsvLoader.load();
