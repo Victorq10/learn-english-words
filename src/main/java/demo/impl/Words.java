@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 public class Words {
 
     public static String convertWordToPronunciationFileName(String word) {
-        if (containsSpecialCharacters(word)) {
+        if (word.length() <= 2) {
             byte[] bytes = word.getBytes(StandardCharsets.UTF_8);
             return new BigInteger(1, bytes).toString(16);
         } else {
@@ -17,17 +17,5 @@ public class Words {
             word = word.replaceAll("\\(.*\\)", "");
             return word.trim();
         }
-    }
-
-    private static boolean containsSpecialCharacters(String word) {
-        for (char c : word.toCharArray()) {
-            if (!isRegularCharacter(c))
-                return true;
-        }
-        return false;
-    }
-
-    private static boolean isRegularCharacter(char c) {
-        return Character.isLetter(c) || (c == ' ') || (c == '(') || (c == ')' || (c == '-'));
     }
 }
