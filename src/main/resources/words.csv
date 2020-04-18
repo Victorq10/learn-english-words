@@ -48,7 +48,7 @@ _,ˌʌn.dɚˈskɔːr,подчеркивание,
 (),pəˈrɛnθɪsiːz,круглые скобки,
 [],ˈbrakits,скобки,
 /,ˈfôrwərd slaSH,приямая косая черта,
-\,ˈbakwərd slaSH,обратная косая черта,
+"\\",ˈbakwərd slaSH,обратная косая черта,
 observant,əbˈzərvənt,наблюдательный; соблюдающий; внимательный; исполнительный,"quick to notice things. adhering strictly to the rules of a particular religion, especially Judaism."
 punctual,ˈpəNGkCHo͞oəl,"пунктуальны, аккуратный, точный",happening or doing something at the agreed or proper time; on time.
 subsequent,ˈsəbsəkwənt,последующий,coming after something in time; following.
@@ -167,7 +167,8 @@ treatment,ˈtrētmənt,лечение; обработка;обращение,
 to treat,,лечить; относиться; обращаться; обрабатывать,
 good to go,,можем идти,to ready to leave or to start doing something
 other than that,,кроме этого,
-to peril,,"подвергать опасности",expose to danger; threaten.
+to peril,,"подвергать опасности
+",expose to danger; threaten.
 peril,ˈperəl,опасность; риск,serious and immediate danger.
 to upset,ˌəpˈset,расстраивать; огорчать; нарушать,"make (someone) unhappy, disappointed, or worried."
 to allot,əˈlät,выделять; распределять; отводить,give or apportion (something) to someone as a share or task.
