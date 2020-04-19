@@ -6,6 +6,7 @@ import demo.impl.Words;
 
 import java.io.InputStream;
 import java.util.List;
+import java.util.Optional;
 
 public class GetMissedPronunciations {
 
@@ -19,8 +20,8 @@ public class GetMissedPronunciations {
             String word = record.get(0);
             if (word != null) {
                 String fileName = Words.convertWordToPronunciationFileName(word);
-                InputStream is = Mp3Loader.getPronunciationInputStream(fileName);
-                if (is != null) {
+                Optional<InputStream> is = Mp3Loader.getPronunciationInputStream(fileName);
+                if (is.isPresent()) {
                     available++;
                 } else {
                     System.out.println(word);

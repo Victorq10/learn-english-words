@@ -4,15 +4,16 @@ import javazoom.jl.player.FactoryRegistry;
 import javazoom.jl.player.Player;
 
 import java.io.InputStream;
+import java.util.Optional;
 
 public class Pronouncer {
 
     public static void pronounce(String word) {
         try {
             String fileName = Words.convertWordToPronunciationFileName(word);
-            InputStream is = Mp3Loader.getPronunciationInputStream(fileName);
-            if (is != null) {
-                Player player = new Player(is, FactoryRegistry.systemRegistry().createAudioDevice());
+            Optional<InputStream> is = Mp3Loader.getPronunciationInputStream(fileName);
+            if (is.isPresent()) {
+                Player player = new Player(is.get(), FactoryRegistry.systemRegistry().createAudioDevice());
                 player.play();
                 while (!player.isComplete()) {
                     Thread.sleep(100);

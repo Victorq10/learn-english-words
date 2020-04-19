@@ -11,14 +11,13 @@ public class ComposeSentenceFromWords {
     public static void main(String[] args) throws Exception {
         List<List<String>> records = CsvLoader.load();
 
-         Random random = new Random();
+        Random random = new Random();
 
         while (records.size() > 1) {
             pronounceWord(random, records);
             pronounceWord(random, records);
 
             Thread.sleep(15000);
-
             System.out.println();
         }
     }
